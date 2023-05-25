@@ -1,7 +1,7 @@
 public class Meeting extends Task {
     protected String topic;
     protected String project;
-    protected  String start;
+    protected String start;
 
 
     public Meeting(int id, String topic, String project, String start) {
@@ -14,12 +14,15 @@ public class Meeting extends Task {
     public String getTopic() {
         return topic;
     }
+
     public String getProject() {
         return project;
     }
+
     public String getStart() {
         return start;
     }
+
     @Override
     public boolean matches(String query) {
         if (topic.contains(query)) {
